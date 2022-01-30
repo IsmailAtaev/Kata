@@ -21,4 +21,7 @@ public class KataTest {
         }
         return vowelsCount;
     }
+    public static int getCount1(String str) {
+        return str.replaceAll("[^aeiou]","").length();
+    }
 }
