@@ -5,7 +5,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class KataTest {
     public static void main(String[] args) {
-        System.out.println(getCount(null));
+        System.out.println(getCount3("vdfvdvfdscqwdszxXsaaaaa"));
 
     }
 
@@ -23,5 +23,8 @@ public class KataTest {
     }
     public static int getCount1(String str) {
         return str.replaceAll("[^aeiou]","").length();
+    }
+    public static int getCount3(String str) {
+        return (int)str.chars().mapToObj(i -> (char)i).filter(i -> "aeiou".contains(String.valueOf(i))).count();
     }
 }
