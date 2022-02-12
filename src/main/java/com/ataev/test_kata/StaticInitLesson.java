@@ -12,5 +12,6 @@ public class StaticInitLesson {
     public static void main(String[] args) {
         new StaticInitLesson();
         System.out.println(i);
+
     }
 }
